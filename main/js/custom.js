@@ -286,7 +286,7 @@ jQuery(function ($) { "use strict";
 
 	function initialize() {
 
-		var myLatLng = new google.maps.LatLng(22.333851, 91.812256);
+		var myLatLng = new google.maps.LatLng(10.216664, -84.297032);
 
 		var roadAtlasStyles = [{
 			"featureType": "landscape",
@@ -363,10 +363,10 @@ jQuery(function ($) { "use strict";
 			center: myLatLng,
 			disableDefaultUI: true,
 			scrollwheel: false,
-			navigationControl: false,
-			mapTypeControl: false,
-			scaleControl: false,
-			draggable: false,
+			navigationControl: true,
+			mapTypeControl: true,
+			scaleControl: true,
+			draggable: true,
 			mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
 			}
@@ -388,7 +388,7 @@ jQuery(function ($) { "use strict";
 		});
 
 		var styledMapOptions = {
-			name: 'US Road Atlas'
+			name: 'Bajos del Toro, San Carlos, CR'
 		};
 
 		var usRoadMapType = new google.maps.StyledMapType(
